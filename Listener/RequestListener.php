@@ -72,9 +72,9 @@ class RequestListener
             }
 
             // Set application name if different from ini configuration
-            if ($appName !== ini_get('newrelic.appname')) {
+//            if ($appName !== ini_get('newrelic.appname')) {
                 $this->interactor->setApplicationName($appName, $this->newRelic->getLicenseKey(), $this->newRelic->getXmit());
-            }
+//            }
         }
     }
 
